@@ -22,12 +22,16 @@ currNum = 2
 while len(primeList) < desiredNumCount:
     # Assume that this number is prime
     isPrime = True
-    # Testing the remainder after division by higher number than the square root is pointless
-    currNumSqrt = int(math.sqrt(currNum)) + 1
+    # Get the square root of the currently tested number
+    currNumSqrt = int(math.sqrt(currNum))
 
-    # Test the remainder after division by every number lower than the square root
-    for i in range(2, currNumSqrt):
-        # If the remainder after division by one of the numbers is 0
+    # Get the remainder after division by every prime number computer so far
+    for i in primeList:
+        # Testing the remainder after division by higher number than the square root is pointless
+        if i > currNumSqrt:
+            break
+
+        # If the remainder after division by one of the prime numbers is 0
         if currNum % i == 0:
             # This number can't possibly be prime
             isPrime = False
