@@ -1,2 +1,2 @@
 # scripts
-Used for efficient sharing of my scripts between different computers.
+Used for quick sharing of my scripts between different computers
