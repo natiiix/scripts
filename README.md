@@ -44,7 +44,7 @@ Used for quick sharing of my scripts between different computers
   <tr>
     <td>tts.py</td>
     <td>
-      Easy-to-use Windows/Linux text-to-speech wrapper module.<br><br>
+      Easy-to-use Windows/Linux text-to-speech wrapper module.<br>
       <pre>import tts<br>tts.speak(text to read [, voice index])</pre>
     </td>
   </tr>
