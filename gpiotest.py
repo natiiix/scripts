@@ -23,10 +23,13 @@ def read(channel):
     GPIO.setup(channel, GPIO.IN)
     return GPIO.input(channel)
 
-while True:
-    write(18, 1)
-    time.sleep(0.5)
-    write(18, 0)
-    time.sleep(0.5)
+try:
+    while True:
+        write(18, GPIO.HIGH)
+        time.sleep(0.5)
+        write(18, GPIO.LOW)
+        time.sleep(0.5)
+except KeyboardInterrupt:
+    pass
 
 GPIO.cleanup()
