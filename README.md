@@ -48,4 +48,10 @@ Used for quick sharing of my scripts between different computers
       <pre>import tts<br>tts.speak(text to read [, voice index])</pre>
     </td>
   </tr>
+  <tr>
+    <td>ascii_to_brainfuck.py</td>
+    <td>
+      Converts an input ASCII string into a BrainFuck program that prints the string.
+    </td>
+  </tr>
 </table>
